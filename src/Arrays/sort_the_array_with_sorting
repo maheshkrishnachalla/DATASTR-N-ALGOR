@@ -1,0 +1,40 @@
+"""
+Sort the array in the time complexity O(n)
+
+input  = [-5, -3, -2, 0, 1, 4, 10]
+output = [0, 1, 4, 9, 16 ,25, 100]
+
+time complexity should be O(n)
+
+"""
+from timeit import default_timer as timer
+
+class Solution:
+
+    def sort_array(self, arr: [int]) -> [int]:
+        if len(arr) < 1:
+            return arr
+
+        """
+        time complexity is O(nlogn)
+        """
+        arr = [i * i for i in arr]
+        arr.sort()
+
+        return arr
+
+
+if __name__ == "__main__":
+    arr = range(-10, 1, 2)
+    arr2 = range(1, 10, 2)
+    arr = list(arr)
+    arr.extend(list(arr2))
+    print()
+    print("input :",arr)
+    s = Solution()
+    start = timer()
+    result = s.sort_array(arr=arr)
+    end = timer()
+    print("output :",result)
+    print()
+    print("time :",end - start, " secs") # time : 0.0329984  secs
