@@ -10,12 +10,13 @@ def selection_sort(arr):
             if arr[j] < arr[min]:
                 min = j
         arr[i], arr[min] = arr[min],arr[i]
+        print(arr)
 
 #arr = [20,15,12,10,14,2]
-arr  = rn.sample(range(1,1000),10)
-print(arr)
+arr  = rn.sample(range(1,100),10)
+print("input :", arr)
 start = time.time()
 selection_sort(arr=arr)
 end = time.time()
-print(arr)
+print("output :", arr)
 print(end - start, "secs")

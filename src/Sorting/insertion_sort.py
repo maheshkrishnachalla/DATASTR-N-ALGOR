@@ -9,11 +9,12 @@ def insertion_sort(arr):
             arr[last + 1] = arr[last]
             last = last - 1
         arr[last + 1] = key
+        print(arr)
     
     return arr
     
 #arr = [5,4,3,2,1]
-arr  = rn.sample(range(1,1000),10)
+arr  = rn.sample(range(1,100),10)
 print("input array =",arr)
 start = time.time()
 insertion_sort(arr=arr)

@@ -11,8 +11,9 @@ def bubble_sort(arr):
 
 #arr = [29,10,14,37,12,19,24]
 arr  = rn.sample(range(1,100),10)
+print("input :", arr)
 start = time.time()
 result = bubble_sort(arr=arr)
 end = time.time()
-print(result)
+print("output :", result)
 print(end - start, "secs")
