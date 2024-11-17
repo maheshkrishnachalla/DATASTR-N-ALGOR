@@ -4,5 +4,5 @@ def factorial(n):
     else:
         return n*factorial(n-1)
     
-fact = factorial(5)
+fact = factorial(6)
 print(fact)
