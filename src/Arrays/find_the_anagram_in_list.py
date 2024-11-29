@@ -9,7 +9,7 @@ val output=List(List("acb","bac"),List("tea","eat","ate"),List("apt","tap"),List
 from collections import defaultdict
 def get_anagram(arr):
     dt = defaultdict(list)
-    print(dt)
+    #print(dt)
     for word in arr:
         key = "".join(sorted(word))
         dt[key].append(word)
