@@ -1,0 +1,8 @@
+1234567:ERROR:2025-08-11 12:12:20:this is a exception
+1234568:ERROR:2025-08-11 12:14:10:database connection failed
+1234569:INFO:2025-08-11 12:15:00:system running normally
+1234570:ERROR:2025-08-11 12:16:45:file not found
+1234571:ERROR:2025-08-11 12:18:05:timeout while connecting to API
+1234580:INFO:2025-08-11 12:30:00:system running normally
+1234585:INFO:2025-08-11 12:40:00:system running normally
+1234589:INFO:2025-08-11 12:50:00:system running normally
