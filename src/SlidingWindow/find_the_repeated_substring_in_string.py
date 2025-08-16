@@ -49,6 +49,6 @@ def find_all_repeated_substrings(s):
 # Example usage
 s = "pppwwkewwwsboss"
 
-#s = 'ppwwekkkewww'
+s = 'ppwwwekkkeww'
 print(find_repeated_substring(s=s))
 print(find_all_repeated_substrings(s=s))
