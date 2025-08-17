@@ -132,7 +132,7 @@ l1.display()
 l1.remove_node_at_index(3)
 l1.display()
 print(l1.size_of_LL())
-
+l1.display()
 #print(l1)
 #l1.display()
 
