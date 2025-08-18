@@ -16,7 +16,7 @@ def read_large_file(file_path):
             yield 'ERROR', date_time
 
 
-file_path = "./sample_log.txt"
+file_path = "./input/sample_log.txt"
 gen = read_large_file(file_path=file_path)
 
 df = pd.DataFrame()
@@ -25,6 +25,6 @@ for i in gen:
 
 print(df.to_string(index=False))
 
-csv_df = df.to_csv(index=False, path_or_buf='logs_output.csv')
+csv_df = df.to_csv(index=False, path_or_buf='./output/logs_output.csv')
 
 

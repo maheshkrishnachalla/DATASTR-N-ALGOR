@@ -1,6 +1,6 @@
 # write the logs into file
 
-log_file_path = "sample_log.txt"
+log_file_path = "input/sample_log.txt"
 
 def write_logs(log_file_path):
     # sample logs
