@@ -107,6 +107,15 @@ class LinkedList:
 
 
 l1 = LinkedList()
+l1.insert_at_end(11)
+l1.insert_at_end(12)
+l1.insert_at_end(13)
+l1.insert_at_end(14)
+l1.insert_at_end(15)
+l1.display()
+l1.remove_node_at_index(0)
+l1.display()
+"""
 print(l1.size_of_LL())
 l1.insert_at_end(10)
 print(l1.size_of_LL())
@@ -135,4 +144,4 @@ print(l1.size_of_LL())
 l1.display()
 #print(l1)
 #l1.display()
-
+"""
