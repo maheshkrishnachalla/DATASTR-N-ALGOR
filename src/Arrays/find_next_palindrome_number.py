@@ -30,5 +30,5 @@ def next_palindrome(n):
     return  sum
 
 
-result = next_palindrome(n=99999)
+result = next_palindrome(n=2562)
 print(result)
