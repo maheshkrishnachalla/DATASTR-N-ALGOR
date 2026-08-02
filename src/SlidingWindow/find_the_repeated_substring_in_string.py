@@ -2,7 +2,7 @@
 find the repeated sub_string in string
 
 """
-
+from itertools import groupby
 def find_repeated_substring(s):
     n = len(s)
     p1 = 0
@@ -34,14 +34,28 @@ def find_all_repeated_substrings(s):
         while j < len(s) and s[j] == char:
             j += 1
         length = j-i
-        if length > max_len:
+        if length >= max_len:
             max_len = length
             #runs = [s[i:j]]
-            runs.append(s[i:j])
-        elif length == max_len:
-            runs.append(s[i:j])
+            if j in runs:
+                max(len(s[i]))
+                runs.append(s[i:j])
+        #elif length == max_len:
+         #   runs.append(s[i:j])
         i = j
     return  runs
+
+
+def find_all_max_repeated_substrings(s):
+    max_strs = {}
+    for char , group in groupby(s):
+        st = "".join(group)
+        length = len(st)
+        if length >=2:
+            if char not in max_strs or length > len(max_strs[char]):
+                max_strs[char] = st
+
+    return list(max_strs.values())
 
 
 
@@ -49,6 +63,7 @@ def find_all_repeated_substrings(s):
 # Example usage
 s = "pppwwkewwwsboss"
 
-s = 'ppwwwekkkeww'
+s = 'ppwwwekkkewwpppp'
 print(find_repeated_substring(s=s))
 print(find_all_repeated_substrings(s=s))
+print(find_all_max_repeated_substrings(s=s))

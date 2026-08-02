@@ -7,4 +7,4 @@ def find_fibnocii_numbers(n):
 # find fibnocii numbers
 
 
-print(find_fibnocii_numbers(3))
+print(find_fibnocii_numbers(5))
