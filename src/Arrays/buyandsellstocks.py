@@ -46,7 +46,7 @@ def maxProfit(prices):
 
 
 
-arr = [7, 10, 1, 3, 6, 9, 2]
+arr = [7, 10, 1, 12, 3, 6, 9, 2]
 #arr = [7, 6, 4, 3, 1]
 #arr = [1, 3, 6, 9, 11]
 result  =buyandsellstocks(arr=arr)

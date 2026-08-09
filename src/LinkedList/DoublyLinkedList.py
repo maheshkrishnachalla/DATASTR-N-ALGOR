@@ -31,24 +31,61 @@ class DoublyLinkedList:
         curr.next = node
         node.prev = curr
 
+    def remove_at_start(self):
+        if self.head is None:
+            return
+        else:
+            curr = self.head
+            if curr.next:
+                self.head = curr.next
+                self.head.prev = None
+
+    def remove_at_end(self):
+        if self.head is None:
+            return
+        elif self.head.next is None:
+            self.head = None
+            return
+        else:
+            curr = self.head
+            while curr.next and curr.next.next:
+                curr = curr.next
+            curr.next = None
+            #print(curr.next.data)
+
+
+
+
+
     def display(self):
         curr = self.head
         while curr:
             prev_val = curr.prev.data if curr.prev else 'None'
             next_val = curr.next.data if curr.next else 'None'
-            print(f"{prev_val}|[{curr.data}]|{next_val}", end='<-->')
+            print(f"m({prev_val})|{curr.data}|m({next_val})", end='<-->')
             curr = curr.next
-        print("None")
+        print("")
 
 
 doublyLL = DoublyLinkedList()
+doublyLL.remove_at_start()
+doublyLL.remove_at_end()
 doublyLL.insert_at_end(1)
+#doublyLL.remove_at_end()
 #doublyLL.display()
 doublyLL.insert_at_end(2)
-#doublyLL.display()
+#doublyLL.remove_at_end()
+doublyLL.display()
 doublyLL.insert_at_end(3)
 doublyLL.insert_at_end(4)
 doublyLL.insert_at_start(5)
 doublyLL.display()
+doublyLL.remove_at_start()
+doublyLL.display()
 doublyLL.insert_at_start(6)
+doublyLL.remove_at_end()
+doublyLL.display()
+doublyLL.insert_at_end(7)
+doublyLL.display()
+doublyLL.remove_at_end()
 doublyLL.display()

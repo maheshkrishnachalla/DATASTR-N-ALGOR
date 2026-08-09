@@ -26,7 +26,7 @@ def find_min_and_max_element_in_array(arr:list[int]):
 
     return min, max
 
-arr = [3, 5, 4, 1, 9]#[22, 14, 8, 17, 35, 3]
+arr = [3, 5, 4, 1, 9,22, 14, 8, 17, 35, 3]
 result = find_min_and_max_element_in_array(arr=arr)
 print("minimum value :", result[0])
 print("maximum value :", result[1])
