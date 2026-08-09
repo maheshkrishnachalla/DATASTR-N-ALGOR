@@ -35,7 +35,7 @@ def modify_array(arr):
     return arr
 
 
-arr = [13, 7, 8, 3, 2, 10, 15, -1]
+arr = [3, 6, 9, -10, -5, -2, 0, 8] #[-5, -12, -1, 7, 14, -7, 3, 6] #[13, 7, 8, 3, 2, 10, 15, -1]
 print(arr)
 result = modify_array(arr=arr)
 print(result)

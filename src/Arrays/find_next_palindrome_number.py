@@ -30,5 +30,13 @@ def next_palindrome(n):
     return  sum
 
 
-result = next_palindrome(n=2562)
+def next_palindrome_2(n):
+    m = n+1
+    while str(m) != str(m)[::-1]:
+        m = m+1
+    return m
+
+result = next_palindrome(n=292)
 print(result)
+result2 = next_palindrome_2(n=292)
+print(result2)

@@ -23,7 +23,7 @@ if __name__ == "__main__":
     start_time = time.time()
     arr = [i for i in range(1,N, rn.randint(1,4))]
     print("log =", m.log2(N))
-    #print(arr)
+    print(arr)
     result = binary_search(arr=arr, target=target)
     print("index of {target} =".format(target=target), result)
     end_time = time.time()
